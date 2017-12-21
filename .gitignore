@@ -1,0 +1,6 @@
+/node_nodules
+/www
+/plateforms
+/.vscode
+*.log.*
+*.log

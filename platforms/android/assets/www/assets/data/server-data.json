@@ -1,0 +1,823 @@
+{
+  "appData": {
+    "version": "0.0.1",
+    "userType": "Customer",
+    "upgradeRequired": false,
+    "helpRequired": false,
+    "root": {
+      "name": "Munshiji247",
+      "properties": {
+        "message": ["Welcome to Munshiji247...", "What do you want to do?"],
+        "dynamicMessage": [],
+        "action": "auto",
+        "dataUrl": "",
+        "child": [{
+            "name": "Create Service",
+            "displayType": "tile",
+            "properties": {
+              "message": ["Create a new service from these categories."],
+              "dynamicMessage": [],
+              "action": "click",
+              "dataUrl": "",
+              "child": [{
+                "name": "Tenant Management",
+                "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                "displayType": "tile",
+                "properties": {
+                  "message": [],
+                  "dynamicMessage": [],
+                  "action": "click",
+                  "dataUrl": "",
+                  "child": [{
+                    "name": "Tenant Management Basic",
+                    "img": "assets/ourservices/tenant_management_basic.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$60",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Tenant Management Basic"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Tenant Management Basic'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Tenant Management Advance",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$120",
+                    "img": "assets/ourservices/tenant_management.jpg",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Tenant Management Advance"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Tenant Management Advance'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Tenant Finding",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$100*",
+                    "img": "assets/ourservices/tenant_finding.jpg",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Tenant Finding"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Tenant Finding'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Tenant Finding with Management",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$280*",
+                    "displayType": "card",
+                    "img": "assets/ourservices/tenant_finding_with_management.jpg",
+                    "properties": {
+                      "message": ["Create service from Tenant Finding with Management"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Tenant Finding with Management'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  }],
+                  "assetType": {
+                    "type": "card",
+                    "lookfor": ["none"],
+                    "property": {
+                      "name": "Card Details",
+                      "elements": []
+                    }
+                  }
+                }
+              }, {
+                "name": "Property Watch",
+                "desc": "As soon as you choose property watch(Green Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (4 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                "displayType": "tile",
+                "properties": {
+                  "message": [],
+                  "dynamicMessage": [],
+                  "action": "click",
+                  "dataUrl": "",
+                  "child": [{
+                    "name": "Blue Eye",
+                    "img": "assets/ourservices/blue_eye.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$30",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Blue Eye"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Blue Eye'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Green Eye",
+                    "img": "assets/ourservices/green_eye.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$60",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Green Eye"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Green Eye'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Red Eye",
+                    "img": "assets/ourservices/red_eye.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$100*",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Red Eye"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Red Eye'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  }],
+                  "assetType": {
+                    "type": "card",
+                    "lookfor": ["none"],
+                    "property": {
+                      "name": "Card Details",
+                      "elements": []
+                    }
+                  }
+                }
+              }, {
+                "name": "Bill Payments",
+                "desc": "Birth Certificate is the most important certificate for any person as that’s the first certificate issued for a child after birth, which gives him the documentary evidence and related citizenship rights. If the birth is registered at the time of birth then the certificate will be issued as per details available with the municipal office. In many cases name would not have been mentioned at the time of birth. This makes it more complex, needing a thorough search in municipal records with Parents name and applicants date of birth. Where name is not mentioned at the time of birth registration it can be included by submitting the necessary documents. We will require an authorization letter from applicant in favor of munshiji247 to represent the applicant. We will scan an image of the certificate and send it via email, where physical delivery is needed within India, We will send it by courier Free of costand international courier will be charged extra.",
+                "displayType": "tile",
+                "properties": {
+                  "message": [],
+                  "dynamicMessage": [],
+                  "action": "click",
+                  "dataUrl": "",
+                  "child": [{
+                    "name": "Property Tax",
+                    "img": "assets/ourservices/property-tax.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$35",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Property Tax"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Property Tax'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  }],
+                  "assetType": {
+                    "type": "card",
+                    "lookfor": ["none"],
+                    "property": {
+                      "name": "Card Details",
+                      "elements": []
+                    }
+                  }
+                }
+              }, {
+                "name": "Documents Procurement",
+                "desc": "As soon as you choose property watch(Red Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (12 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                "displayType": "tile",
+                "properties": {
+                  "message": [],
+                  "dynamicMessage": [],
+                  "action": "click",
+                  "dataUrl": "",
+                  "child": [{
+                    "name": "Birth Certificate",
+                    "img": "assets/ourservices/Birth_Certificate.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$55*",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Birth Certificate"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Birth Certificate'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  },{
+                    "name": "Pan Card",
+                    "img": "assets/ourservices/pan_card.jpg",
+                    "desc": "As soon as you choose property watch(Blue Eye), the task is immediately assigned to a field executive alongside the back office personnel. A verification procedure is carried out to confirm whether you are the authorized/owner of the said property. After all the verification done, our field executive will visit the site and depending upon whether it is empty or not, the field executive keeps a watch upon the property from time to time depending upon the frequency of service chosen (2 visits/year). After each visit, you will get photos and videos of your property condition. A detailed report will be created and compiled by our analytics at the back office and our back office personnel will forwards it to you. If required the field executive will put up a board on the property stating that “This property is maintained by munshiji 247.com.” along with your name and other details provided by you. Any cleaning, painting, fencing and other such requests from your end are handled by our team or other vendors.",
+                    "price": "$30",
+                    "displayType": "card",
+                    "properties": {
+                      "message": ["Create service from Pan Card"],
+                      "dynamicMessage": [],
+                      "action": "click",
+                      "dataUrl": "",
+                      "child": [{
+                        "name": "Book Now",
+                        "properties": {
+                          "message": ["Create service from 'Pan Card'"],
+                          "dynamicMessage": [],
+                          "action": "click",
+                          "dataUrl": "",
+                          "child": []
+                        }
+                      }],
+                      "assetType": {
+                        "type": "form",
+                        "lookfor": ["none"],
+                        "validator": "validateFormData",
+                        "property": {
+                          "name": "Create Munshiji Service",
+                          "elements": [{
+                            "message": "Name of a person with whom we can contact?",
+                            "key": "Name",
+                            "assetType": "input"
+                          }, {
+                            "message": "Email of contact person?",
+                            "key": "Email",
+                            "assetType": "input"
+                          }, {
+                            "message": "Phone No. of contact person?",
+                            "key": "Phone",
+                            "assetType": "input"
+                          }, {
+                            "message": "Please provide us with <b>requirement address</b> details.House No. and Street?",
+                            "key": "RequirementAddress",
+                            "assetType": "input"
+                          }, {
+                            "message": "Area?",
+                            "key": "RequirementArea",
+                            "assetType": "input"
+                          }, {
+                            "message": "City?",
+                            "key": "RequirementCity",
+                            "assetType": "input"
+                          }, {
+                            "message": "State?",
+                            "key": "RequirementState",
+                            "assetType": "input"
+                          }, {
+                            "message": "Country?",
+                            "key": "RequirementCountry",
+                            "assetType": "input"
+                          }, {
+                            "message": "Pin Code?",
+                            "key": "RequirementPin",
+                            "assetType": "input"
+                          }]
+                        }
+
+                      }
+                    }
+                  }],
+                  "assetType": {
+                    "type": "card",
+                    "lookfor": ["none"],
+                    "property": {
+                      "name": "Card Details",
+                      "elements": []
+                    }
+                  }
+                }
+              }],
+              "assetType": {
+                "type": "service_card",
+                "lookfor": ["none"],
+                "property": {
+                  "name": "Card Details",
+                  "elements": []
+                }
+
+              }
+            }
+          },
+          {
+            "name": "Track Service",
+            "displayType": "tile",
+            "properties": {
+              "message": ["Select your service which you want to track?"],
+              "dynamicMessage": [],
+              "action": "click",
+              "dataUrl": "/api/getAllServices",
+              "child": [],
+              "assetType": {
+                "type": "list",
+                "lookfor": ["none"],
+                "property": {
+                  "name": "List Details",
+                  "elements": []
+                }
+              }
+            }
+          }
+        ],
+        "assetType": {
+          "type": "tile",
+          "lookfor": ["none"],
+          "property": {
+            "name": "List Details",
+            "elements": []
+          }
+
+
+        }
+      }
+    }
+  }
+}

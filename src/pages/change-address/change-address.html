@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Change Address</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>  
+    <form class="login-form" [formGroup]="changeAddressForm">
+    <ion-row text-center>
+        <img src="assets/mji.png" alt="" class="responsive-img valign profile-image-login" item-center>
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Address" type="text" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="address" [(ngModel)]="address">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Area" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            required formControlName="landmark" [(ngModel)]="area">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Zip code" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            equired formControlName="zip" [(ngModel)]="zip">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="City/Town" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            required formControlName="city" [(ngModel)]="city">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Country" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            required formControlName="country" [(ngModel)]="country">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="State" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            required formControlName="state" [(ngModel)]="state">
+    </ion-row>
+    <ion-row style="margin: 3% 2%;">
+      <button ion-button full (click)="onSubmit()">Save</button>
+    </ion-row>
+  </form>
+</ion-content>

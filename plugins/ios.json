@@ -1,0 +1,68 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-media-capture": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "MICROPHONE_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-geolocation": {
+            "GEOLOCATION_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.munshiji247.www"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        },
+        "cordova-plugin-filepath": {
+            "PACKAGE_NAME": "com.munshiji247.www"
+        }
+    }
+}

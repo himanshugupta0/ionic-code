@@ -1,0 +1,34 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Note</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="noteForm">
+        <ion-textarea placeholder="Write a note" rows="4" required formControlName="chatMessage"></ion-textarea>
+        <!-- <button style="background:#BCBCBC;color:white; float:left;" ion-button icon-left (click)="cancelUpload()" [hidden]="lastFile === null">
+            <ion-icon name="close"></ion-icon>Cancel
+        </button>
+        <button style="background:#5598FB;color:white; float:right;" ion-button icon-left (click)="uploadNote()" [hidden]="lastFile === null">
+            <ion-icon name="cloud-upload"></ion-icon>Upload
+        </button> -->
+    </form>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <div class="row" style="width: 100%;float:left;">
+            <div class="col-xs-12" style="float: right;width: 60%;margin-left: 20%;">
+                <button ion-button full (click)="cancelUpload()" id="cancelBtn" style="background:#BCBCBC;color:white; float:left;width: 46%;" ion-button icon-left>
+                    <ion-icon name="close"></ion-icon>Cancel
+                </button>
+                <button ion-button full (click)="uploadNote()" style="background:#5598FB;color:white; float:right;width: 46%;" ion-button icon-left>
+                    <ion-icon name="cloud-upload"></ion-icon>Upload</button>
+            </div>
+        </div>
+    </ion-toolbar>
+
+</ion-footer>

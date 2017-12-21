@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-wkwebview-engine",
+  "version": "1.1.4-dev",
+  "description": "The official Apache Cordova WKWebView Engine Plugin",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/cordova-plugin-wkwebview-engine"
+  },
+  "bugs": {
+    "url": "https://github.com/ionic-team/cordova-plugin-wkwebview-engine/issues"
+  },
+  "keywords": [
+    "cordova",
+    "wkwebview"
+  ],
+  "scripts": {
+    "test": "npm run jshint && npm run objc-tests",
+    "objc-tests": "cd tests/ios && npm test",
+    "preobjc-tests": "cd tests/ios && npm install",
+    "jshint": "node_modules/.bin/jshint src"
+  },
+  "author": "Apache Cordova",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
+}

@@ -1,0 +1,62 @@
+timeline-view {
+  div.document {
+      width: 50%;
+      padding: 10px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+    ion-label {
+      display: block;
+      overflow: hidden;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+  }
+  .card-content-ios {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  ion-card-content {
+    display: block;
+    white-space: initial;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .card-content-md {
+    padding-right: 3%;
+    padding-bottom: 0px;
+    padding-left: 3%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  timeline-view .card-content-md {
+    padding-top: 2%;
+  }
+  .card-md p {
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: darkgray;
+  }
+  .ionCol {
+    margin-left: -20%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

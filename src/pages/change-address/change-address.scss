@@ -1,0 +1,56 @@
+page-change-address {
+  img{
+    margin: 1% auto;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+  }
+  ion-row{
+    margin: 0 1%;
+  }
+  button{
+    border-radius: 0 !important;
+  }
+.form-input::-webkit-input-placeholder{
+  font: inherit;
+  -webkit-transition: font-size 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.form-input{
+  font: inherit;
+  font-size: 1em;
+  margin: 1% 2%;
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 20px 0 10px;
+  border-bottom: solid 1px #7e57c2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #7e57c2 4%);
+  background-position: -2000px 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  resize: none;
+  overflow: hidden;
+}
+
+.form-input:focus::-webkit-input-placeholder{
+  color: #7e57c2;
+}
+.form-input:focus, .form-input:valid{
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+.form-input:focus::-webkit-input-placeholder, .form-input:valid::-webkit-input-placeholder{
+  font-size: 0.8em;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+  opacity: 1;
+}
+}

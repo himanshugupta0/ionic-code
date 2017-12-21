@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <a ion-button icon-only (click)="openPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </a>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content #content class="no-padding" style="margin-top: -4px;">
+
+    <ion-list no-lines>
+        <ion-item style="background: #f8f8f8;">
+            <div class="gallery">
+                <img id="profile_image_profile" alt="image" src={{serverhost}}{{profileImageSrc}} />
+            </div>
+            
+            <i style="margin-right: 37%;" aria-hidden="true" class="fa fa-pencil-square-o " (click)="changeProfilePhoto()"></i>
+        </ion-item>
+        <ion-item>
+            <div style = "color:black;font-size: 14px;font-weight: bold;">
+                Personal Info
+            </div>
+        </ion-item>
+        <ion-item>
+            <i class="fa fa-user" aria-hidden="true" style="display:inline-flex">&nbsp;Name:
+                <div [innerHTML]="profileData.user_first_name" style="margin-left:10px" ></div>
+            </i>
+        </ion-item>
+        <ion-item>
+            <i class="fa fa-envelope" aria-hidden="true" style="display:inline-flex">&nbsp;Email:
+                <div [innerHTML]="profileData.user_email" style="margin-left:10px"></div>
+            </i>
+        </ion-item>
+        <ion-item>
+            <i class="fa fa-phone" aria-hidden="true" style="display:inline-flex">&nbsp;Mobile:
+                <div [innerHTML]="profileData.user_phone" style="margin-left:10px"></div>
+            </i>
+        </ion-item>
+        <ion-item>
+            <!-- <div style="padding-right: 0;padding-left: 16px;font-size: 1.6rem;font-weight: normal;text-transform: none;color: #000;background-color: #fff;box-shadow: none;transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);"> -->
+                <i class="fa fa-home" aria-hidden="true" style="display:inline-flex;white-space: pre-line;">&nbsp;Address:
+                <!-- <p style="margin-left:10px">{{profileData.user_address}}</p>-->
+            <!-- </div> -->
+            <div [innerHTML]="profileData.user_address" style="margin-left:10px"></div>
+        </i>
+        </ion-item>
+        
+            
+        
+            
+    
+    </ion-list>
+
+</ion-content>

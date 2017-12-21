@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form class="login-form" [formGroup]="loginForm">
+    <ion-row text-center>
+      <img src="assets/mji.png" alt="" class="responsive-img valign profile-image-login" item-center>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="email">
+        <control-messages [control]="loginForm.controls.email"></control-messages>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Password" type="password" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="password">
+    </ion-row>
+
+    <ion-row style="margin: 3% 2%;">
+      <button ion-button full [disabled]="!loginForm.valid" (click)="onSubmit()">Login</button>
+    </ion-row>
+    <ion-row text-center style="margin: 3% 2%;">
+      <button ion-button outline small color="secondary" (click)="createAccount()">Register</button>
+      <button ion-button clear small color="secondary" (click)="goToForgot()">Forgot password?</button>
+    </ion-row>
+  </form>
+</ion-content>

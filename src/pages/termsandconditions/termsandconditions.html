@@ -1,0 +1,78 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Terms & Conditions</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <p>Payment Policy All the payments will be quoted in USD. Customers paying through international credit cards from other
+        countries will be charged the equivalent USD amount in their currency at the prevailing exchange rate. The payment
+        review panel will give quote for the payment as some services may vary in nature and workforce. A full detailed invoice
+        will be generated and will be sent to your mail. The service will only start if and only if payment is done. Pricing
+        Policy Some service could vary in their costs due to the third party involvement and extra workforce. So we have
+        adopted two layered pricing policy. Flat pricing will be applicable only on yearly plans but as per the fluctuations
+        in foreign currency, monthly plan pricing may vary. According to the nature of the job and requirements, the cost
+        may also rise. In such cases, some extra cost may be levied based on efforts. The quoted price may vary, it shall
+        not be taken as final amount as it may vary due to actual. Based on this initial payment, the effort and cost estimate
+        is estimated and quoted to the client. The customer is free to accept the quote and proceed with the order or request
+        a full refund if the cost estimate does not fit his / her requirement.</p>
+
+    <p>Refund Policy:</p>
+
+    <p>Any refund on services you order through munshiji247 will be governed by the Refund Policy stated below. Further, some
+        services may be governed by their individual refund policies. Refunds on such cancellations will be applicable as
+        follows: munshiji247 will deduct 25% of the order value as cancellation fee and the balance shall be refunded when
+        client requests for a refund. If any extra quote amount is paid by client, then it will be refunded after deduction
+        of costs already incurred in executing the task. If an order could not be completed by customer service for reasons
+        other than customer request for cancellation, then refund will be given after deduction of 25% of the order value
+        plus costs already incurred in executing the task. If an order could not be completed by customer service for reasons
+        attributed to munshiji247 performance on the task requirement, then a full refund will be given. All tasks are done
+        an on best effort basis only. The decision of the company will be final and binding on this matter. For Annual Orders:
+        Refunds will be done after deducting a cancellation fee for services already rendered. This will be calculated on
+        a slab rate as per the below chart:</p>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-5>1st Quarter</ion-col>
+            <ion-col col-7>75% of order value</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-5>2nd Quarter</ion-col>
+            <ion-col col-7>50% of order value</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-5>3rd Quarter</ion-col>
+            <ion-col col-7>25% of order value</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-5>4th Quarter</ion-col>
+            <ion-col col-7>No refund</ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <p>Any additional costs already incurred in executing your task shall also be deducted wherever applicable. Once an order
+        is completed, no refunds can be made. Time to refund to process a request for cancellation is a maximum of 7 working
+        days. However time lines for actual refund to take place and for the credit to reach your account would depend on
+        the speed of banking channels and the credit card companies involved in the transaction (as may be applicable). If
+        you have any issues with our refund policy or if your cancellation request is getting delayed, please mail us at
+        hello@munshiji247.com.
+    </p>
+
+    <div class="row" style="width: 100%; float: left; padding: 5%;margin-left: 5%;">
+        <ion-input type="text" name="name" [(ngModel)]="inputName" placeholder="Your Name"></ion-input>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+
+    <div class="row" style="width: 100%; float: left; padding: 5%">
+        <div class="col-xs-12" style="width: 100%;float: right;">
+            <button ion-button full (click)="dismiss()" id="cancelBtn" style="background-color:#adadad;width: 48%;float: left;">Close</button>
+            <button ion-button full (click)="accept()" [disabled]="!inputName" style="background-color: #00a65a;width: 48%;float: right;">
+                <i class="fa fa-credit-card"></i>Accept</button>
+        </div>
+    </div>
+</div>
+
+</ion-content>

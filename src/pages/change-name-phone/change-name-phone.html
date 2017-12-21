@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Change Name and Phone no.</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>  
+    <form class="login-form" [formGroup]="changeNamePhoneForm">
+    <ion-row text-center>
+        <img src="assets/mji.png" alt="" class="responsive-img valign profile-image-login" item-center>
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Name" type="text" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="name" [(ngModel)]="userName">
+    </ion-row>
+    <ion-row>
+        <input class="form-input" placeholder="Phone" type="text" onblur="this.setAttribute('value', this.value);" value=""
+            required formControlName="phone" [(ngModel)]="userPhone">
+    </ion-row>
+    <ion-row style="margin: 3% 2%;">
+      <button ion-button full (click)="onSubmit()">Save</button>
+    </ion-row>
+  </form>
+</ion-content>

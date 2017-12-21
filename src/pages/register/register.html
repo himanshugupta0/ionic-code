@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form class="login-form" [formGroup]="registrationForm">
+    <ion-row text-center>
+      <img src="assets/mji.png" alt="" class="responsive-img valign profile-image-login" item-center>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Your Name" type="text" onblur="this.setAttribute('value', this.value);" value="" required
+        formControlName="name">
+      <control-messages [control]="registrationForm.controls.name"></control-messages>
+
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="email">
+      <control-messages [control]="registrationForm.controls.email"></control-messages>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Mobile Number" type="text" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="phone">
+      <control-messages [control]="registrationForm.controls.phone"></control-messages>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Password" type="password" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="password">
+      <control-messages [control]="registrationForm.controls.password"></control-messages>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Confirm Password" type="password" onblur="this.setAttribute('value', this.value);"
+        value="" required formControlName="confirmPassword">
+      <!-- <control-messages [control]="registrationForm.controls.confirmPassword"></control-messages> -->
+      <div *ngIf="registrationForm.controls.confirmPassword.errors?.MatchPassword" style="color: red" >Password not match</div>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Address" type="text" onblur="this.setAttribute('value', this.value);" value="" required
+        formControlName="address">
+      <control-messages [control]="registrationForm.controls.address"></control-messages>
+    </ion-row>
+    <ion-row>
+      <div class="form-input2">
+        <input class="form-input" placeholder="Area" type="text" onblur="this.setAttribute('value', this.value);"
+          value="" required formControlName="landmark" floating>
+        <control-messages [control]="registrationForm.controls.landmark"></control-messages>
+      </div>
+      <div>
+        <input class="form-input" placeholder="Zip code" type="text" onblur="this.setAttribute('value', this.value);"
+          value="" required formControlName="zip" floating>
+        <control-messages [control]="registrationForm.controls.zip"></control-messages>
+      </div>
+    </ion-row>
+    <ion-row>
+      <div style="width:33%">
+        <input class="form-input form-input3" placeholder="City/Town" type="text" onblur="this.setAttribute('value', this.value);"
+          value="" required formControlName="city" floating>
+        <control-messages [control]="registrationForm.controls.city"></control-messages>
+      </div>
+      <div style="width:33%">
+        <input class="form-input form-input3" placeholder="Country" type="text" onblur="this.setAttribute('value', this.value);"
+          value="" required formControlName="country" floating>
+        <control-messages [control]="registrationForm.controls.country"></control-messages>
+      </div>
+      <div style="width:33%">
+        <input class="form-input form-input3" placeholder="State" type="text" onblur="this.setAttribute('value', this.value);" value=""
+          required formControlName="state" floating>
+        <control-messages [control]="registrationForm.controls.state"></control-messages>
+      </div>
+    </ion-row>
+    <ion-row style="margin: 3% 2%;">
+      <button ion-button full [disabled]="!registrationForm.valid" (click)="onSubmit()">Register</button>
+    </ion-row>
+  </form>
+</ion-content>

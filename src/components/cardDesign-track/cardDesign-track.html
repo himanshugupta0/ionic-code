@@ -1,0 +1,45 @@
+<ion-card>
+    <div *ngIf="cardDetailsTrack.name == 'Green Eye Service'">
+        <img src="assets/ourservices/green_eye.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Birth Certificate'">
+        <img src="assets/ourservices/Birth_Certificate.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Red Eye Service'">
+        <img src="assets/ourservices/red_eye.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Tenant Management Advance'">
+        <img src="assets/ourservices/tenant_management.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Tenant Finding With Management($120+1 month rent*)'">
+        <img src="assets/ourservices/tenant_finding_with_management.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Property Tax'">
+        <img src="assets/ourservices/property-tax.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Tenant Management Basic'">
+        <img src="assets/ourservices/tenant_management_basic.jpg" style="max-height: 100px" />
+    </div>
+    <!--<div *ngIf="cardDetailsTrack.name == 'Property Management Advance'" >
+        <img src="../../assets/ourservices/pan_card.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Property Management Basic'" >
+        <img src="../../assets/ourservices/pan_card.jpg" style="max-height: 100px" />
+    </div>-->
+    <div *ngIf="cardDetailsTrack.name == 'Pancard'">
+        <img src="assets/ourservices/pan_card.jpg" style="max-height: 100px" />
+    </div>
+    <div *ngIf="cardDetailsTrack.name == 'Tenant Finding'">
+        <img src="assets/ourservices/tenant_finding.jpg" style="max-height: 100px" />
+    </div>
+    <ion-card-content>
+        <p style="font-size: 12px;font-weight:bold;">
+            {{cardDetailsTrack.name}}
+        </p>
+    </ion-card-content>
+    <!-- <ion-row no-padding text-center>
+        <button ion-button clear small color="primary" icon-left>
+            
+        </button>
+    </ion-row> -->
+</ion-card>

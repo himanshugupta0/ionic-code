@@ -1,0 +1,53 @@
+<!--
+  Generated template for the TrackServicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>track-service</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div style="background:#f9f9f9">
+    
+      <div *ngFor="let trackData of trackServiceData" style="margin-top:5px;border:solid 1px #e5e5e5" >
+        <div  style="background:white;" (click)="showSubSubService(trackData._id)">
+          <div style=" border-left:  solid 5px #9e9e9e;">
+          <p style="display:inline-block;">
+            {{trackData.subtaskName}}
+          </p>
+          <span *ngIf="trackData.subtaskAction == 'Picture'" (click)="onClickUpdatePicture(trackData._id)" class="fa fa-camera" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <span *ngIf="trackData.subtaskAction == 'Video'"  (click)="onClickUpdateVideo(trackData._id)" class="fa fa-video-camera" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <span *ngIf="trackData.subtaskAction == 'Signature'" (click)="onClickUpdateSignature(trackData._id)" class="fa fa-pencil" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <span *ngIf="trackData.subtaskAction == 'Bar-code'" (click)="onClickUpdateBarCode(trackData._id)" class="fa fa-barcode" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <span *ngIf="trackData.subtaskAction == 'Note'" (click)="onClickUpdateNote(trackData._id)" class="fa fa-sticky-note-o" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <span *ngIf="trackData.subtaskAction == 'Call'" (click)="onClickUpdateCall(trackData._id)" class="fa fa-phone" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          
+          <!-- <button ion-button round>{{trackData.subtaskAction}}</button> -->
+          </div> 
+        </div>  
+      </div>
+
+      <div style="display:none;margin-left:10px;margin-bottom:5px;background:white;margin-top:5px;border:solid 1px #e5e5e5" *ngFor="let trackDataSubSubService of subSubServiceArrayData">
+          <div style=" border-left:  solid 5px #9e9e9e;">
+            <p style="display:inline-block">
+              {{trackDataSubSubService.subsubtaskName}}
+            </p>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Picture'" (click)="onClickUpdateSubSubPicture(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-camera" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Video'" (click)="onClickUpdateSubSubVideo(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-video-camera" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Signature'" (click)="onClickUpdateSubSubSignature(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-pencil" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Bar-code'" (click)="onClickUpdateSubSubBarCode(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-barcode" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Note'" (click)="onClickUpdateSubSubNote(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-sticky-note-o" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+            <span *ngIf="trackDataSubSubService.subtaskAction == 'Call'" (click)="onClickUpdateSubSubCall(trackData._id,trackDataSubSubService.subsubtaskId)" class="fa fa-phone" style="color:black;float:right;margin-top:20px;margin-right:10px;" title="Update picture"></span>
+          <!-- <button ion-button round>{{trackDataSubSubService.subsubtaskAction}}</button> -->
+          </div>
+        </div>
+  </div>
+</ion-content>

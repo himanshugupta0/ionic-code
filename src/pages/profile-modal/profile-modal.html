@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Change Profile Pic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div style="max-width:70%; margin:18%">
+    <img src="{{pathForImage(lastFile)}}" height="300" width="300" [hidden]="lastFile === null">
+    <ion-buttons [hidden]="lastFile === null">
+      <button ion-button icon-left (click)="uploadImage()" [hidden]="lastFile === null">
+        <ion-icon name="cloud-upload"></ion-icon>Upload
+      </button>
+      <button ion-button icon-left (click)="cancelUpload()" [hidden]="lastFile === null">
+        <ion-icon name="close"></ion-icon>Cancel
+      </button>
+    </ion-buttons>
+  </div>
+
+</ion-content>

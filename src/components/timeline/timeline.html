@@ -1,0 +1,101 @@
+<ion-card *ngIf="timelineData.update!=undefined">
+    <ng-container *ngIf="timelineData.update.split('`')[1]!=undefined">
+    <div *ngIf="timelineData.update.split('`')[1].split(':')[1]=='subTask' ">
+        <h3 style="font-size: 12px;font-weight: bold;padding-left: 2%;padding-top: 2%;padding-bottom: 2%;background: #f8f8f8;/* margin-left:2%; */">{{timelineData.update.split('`')[0]}}</h3>
+        <ion-row style="float: right;">
+            <ion-col class="ionCol" >
+                <ion-note item-end>
+                    {{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+                    </ion-note>
+            </ion-col>
+        </ion-row>
+
+        <!-- <p style="margin-right:1%;float:right;">{{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+        </p> -->
+    </div>
+    <div *ngIf="timelineData.update.split('`')[1].split(':')[1] == 'subSubTask'">
+        <h3 style="font-size: 12px;font-weight: bold;padding-left: 2%;padding-top: 2%;padding-bottom: 2%;background: #f8f8f8;/* margin-left:2%; */">{{timelineData.update.split('`')[0]}}</h3>
+        <ion-row style="float: right;">
+            <ion-col class="ionCol" >
+                <ion-note item-end>
+                    {{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+                    </ion-note>
+            </ion-col>
+        </ion-row>
+
+        <!-- <p style="margin-right:1%;float:right;">{{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+        </p> -->
+    </div>
+    </ng-container>
+<ng-container *ngIf="timelineData.update.split('`')[1]==undefined">
+    <div>
+        <h3 style="font-size: 12px;font-weight: bold;padding-left: 2%;padding-top: 2%;padding-bottom: 2%;background: #f8f8f8;/* margin-left:2%; */">{{timelineData.update}}</h3>
+        <ion-row style="float: right;">
+            <ion-col class="ionCol" >
+                <ion-note item-end>
+                    {{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+                    </ion-note>
+            </ion-col>
+        </ion-row>
+
+        <!-- <p style="margin-right:1%;float:right;">{{timelineData.createdOn.split('-')[0]}} {{timelineData.createdOn.split('-')[1]}} {{timelineData.createdOn.split('-')[2].split('
+            ')[0].slice(-2)}}
+        </p> -->
+    </div>
+</ng-container>
+
+    <ion-card style="padding:10px;background: #f8f8f8;" class="document" *ngIf="timelineData.files.length==0">
+        <h3 style="white-space: initial;display: block;margin-left:10px;font-size: 12px;">{{timelineData.description}}</h3>
+    </ion-card>
+
+    <ion-card *ngFor="let file of timelineData.files">
+
+        <div class="gallery" *ngIf="file.split('.').pop()=='jpg'||file.split('.').pop()=='png'||file.split('.').pop()=='jpeg'||file.split('.').pop()=='tiff'||file.split('.').pop()=='bmp'">
+            <img src="{{serverhost}}{{file}}" alt="Timeline Photo" (click)="viewImage()" />
+        </div>
+
+        <div class="gallery" *ngIf="file.split('.').pop()=='mp4'">
+            <video controls autoplay>
+                <source src={{serverhost}}{{file}} type="video/mp4">
+            </video>
+        </div>
+
+        <div class="document" *ngIf="file.split('.').pop()=='pdf'">
+            <img src="assets/images/pdfimage.png">
+        </div>
+
+        <div class="document" *ngIf="file.split('.').pop()=='doc'">
+            <img src="assets/images/doc.png">
+        </div>
+
+        <!-- <div class="document" *ngIf="file.size()==0">
+            <h3 style="white-space: initial;display: block;">{{timelineData}}</h3>
+        </div> -->
+
+    </ion-card>
+ <ng-container *ngIf="timelineData.update.split('`')[1]!=undefined">
+    <ion-card-content *ngIf="timelineData.update.split('`')[1].split(':')[1] == 'subSubTask'">
+        <p style="font-size: 12px;">{{timelineData.update.split('`')[2].split(':')[1]}}</p>
+    </ion-card-content>
+ </ng-container>
+
+ <ng-container *ngIf="timelineData.update.split('`')[1]==undefined">
+    <ion-card-content>
+        <p style="font-size: 12px;">{{timelineData.update}}</p>
+    </ion-card-content>
+ </ng-container>
+
+    <ion-row style="float: right;">
+        <ion-col class="ionCol" >
+            <ion-note item-end>
+                {{timelineData.createdOn.split(' ')[1]}}
+            </ion-note>
+        </ion-col>
+    </ion-row>
+
+</ion-card>

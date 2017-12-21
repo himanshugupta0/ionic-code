@@ -1,0 +1,29 @@
+card-tile{
+    ion-card {
+        position: relative;
+        text-align: center;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .card-title {
+        position: absolute;
+        top: 20%;
+        font-size: initial;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .card-subtitle {
+        font-size: smaller;
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        color: #fff;
+    }
+
+    .w3-card{
+        background: #F4F4F4
+    }
+}

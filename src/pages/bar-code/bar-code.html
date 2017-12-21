@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Bar-code</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <h3 style="text-align:center;padding-top:50%">Bar-code
+        <ion-icon ios="ios-barcode" md="ios-barcode"></ion-icon> : {{barCodeData.text}}
+    </h3>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <div class="row" style="width: 100%;float:left;">
+            <div class="col-xs-12" style="float: right;width: 60%;margin-left: 20%;">
+                <button ion-button full (click)="cancelUpload()" id="cancelBtn" style="background-color:#adadad;width: 48%;float: left;" [hidden]="lastFile === null">
+                    <ion-icon name="close"></ion-icon>Cancel
+                </button>
+                <button ion-button full (click)="uploadBarcode()" style="background-color: #00a65a;width: 48%;float: right;" [hidden]="lastFile === null">
+                    <ion-icon name="cloud-upload"></ion-icon>Upload</button>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-footer>

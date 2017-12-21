@@ -1,0 +1,29 @@
+page-service-description {
+    img {
+        max-width: 50%;
+        border: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        padding-bottom: 3%;
+    }
+    p {
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 14px;
+        color: #85868d;
+        line-height: 18px;
+    }
+    .price_inr {
+        display: inline;
+        color: #fff;
+        position: relative;
+        font-weight: bold;
+        background: rgb(232, 76, 61);
+        padding: 3px 6px;
+        font-size: 12px;
+        left: 46%;
+    }
+}

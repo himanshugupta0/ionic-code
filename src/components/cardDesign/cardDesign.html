@@ -1,0 +1,14 @@
+<ion-card style="height:150px">
+  <ion-card-content>
+    <div>
+      <h2 style="font-size:12px;color:#5598FB;max-width:80%;float:left">
+        <b>{{cardDetails.name}}</b>
+      </h2>
+      <span (click)="testInfo()" style="float:right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+    </div>
+    <p style="font-size:10px;float:right;color:rgb(255, 187, 0)">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+    <p style="color:rgb(85, 85, 85);font-size:10px;float:left;"><i class="fa fa-clock-o" aria-hidden="true"></i>1 year</p>
+    <img style="height:120px" src={{cardDetails.img}}/>
+    <span class="price_inr">{{cardDetails.price}}</span>
+  </ion-card-content>
+</ion-card>

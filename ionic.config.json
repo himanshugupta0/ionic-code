@@ -1,0 +1,8 @@
+{
+  "name": "Mji247",
+  "app_id": "6bc526cd",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

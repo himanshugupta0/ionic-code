@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Take Picture</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div style="width:100%;height:100%; margin-right:25px">
+    <div style="height:95%; width:100%">
+      <img src="{{pathForImage(lastFile)}}" style="height:100%; width:100%" [hidden]="lastFile === null">
+    </div>
+    <div>
+      <button style="background:#BCBCBC;color:white; float:left;" ion-button icon-left (click)="cancelUpload()" [hidden]="lastFile === null">
+        <ion-icon name="close"></ion-icon>Cancel
+      </button>
+      <button style="background:#5598FB;color:white; float:right;" ion-button icon-left (click)="uploadImage()" [hidden]="lastFile === null">
+        <ion-icon name="cloud-upload"></ion-icon>Upload
+      </button>
+    </div>
+   </div>
+
+</ion-content>

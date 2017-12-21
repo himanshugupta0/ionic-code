@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Forgot Password</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="forgetPasswordForm">
+    <ion-row text-center>
+      <img src="assets/mji.png" alt="" class="responsive-img valign profile-image-login" item-center>
+    </ion-row>
+    <ion-row>
+      <input class="form-input" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
+        required formControlName="email">
+        <control-messages [control]="forgetPasswordForm.controls.email"></control-messages>
+    </ion-row>
+    <ion-row style="margin: 3% 2%;">
+      <button ion-button full [disabled]="!forgetPasswordForm.valid" (click)="recoverPassword()" >Recover my Password</button>
+    </ion-row>
+    <ion-row text-center style="margin: 3% 2%;">
+      <button ion-button outline small color="secondary" (click)="goToRegister()">Register</button>
+      <button ion-button clear small color="secondary" (click)="goToLogin()">Login Now</button>
+    </ion-row>
+  </form>
+</ion-content>

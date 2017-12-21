@@ -1,0 +1,169 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Payment Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="scrollbar">
+
+  <section class="invoice" style="padding-bottom: 0;position: relative;background: #fff;padding: 25px;" id="printDiv">
+    <div class="row" style="margin-right: -15px;margin-left: -15px;">
+      <div class="col-xs-12" style="width: 100%;">
+        <h2 class="page-header" style="padding-bottom: 9px;margin: 40px 0 20px;border-bottom: 1px solid #eee;margin: 10px 0 20px 0;font-size: 18px;">
+          <i class="fa fa-globe"></i> munshiJi247.com
+          <small class="pull-right" style="font-size:12px;color: #666;float: right;display: block;margin-top: 5px;">Date:
+            <b style="font-size:12px;" id="taskDate">27/7/2017</b>
+          </small>
+        </h2>
+      </div>
+    </div>
+    <div class="row invoice-info" style="width:100%">
+      <div style="font-size:12px;width: 40%;float:left" class="col-sm-4 invoice-col">
+        Service Required At:
+        <address id="serviceAddress">
+          <strong>{{formDtails.Name}}</strong>
+          <br>{{formDtails.RequirementAddress}} {{formDtails.RequirementArea}}
+          <br>{{formDtails.RequirementCity}}, {{formDtails.RequirementState}}
+          <br>{{formDtails.RequirementCountry}}-{{formDtails.RequirementPin}}
+          <br>Phone:
+          <b>{{formDtails.Phone}}</b>
+        </address>
+      </div>
+      <div style="width: 20%;float:left;visibility: hidden;" class="col-sm-4 invoice-col">
+        <span id="customerEmail">{{formDtails.Email}}</span>
+        <span id="taskId">59790da2700441831aac171c</span>
+        <span id="taskName">{{formDtails.ServiceName}}</span>
+        <span id="taskFinalPrice">{{service_desc.price}}</span>
+      </div>
+      <div style="width: 40%;float:left" class="col-sm-4 invoice-col">
+        <div style="float:right;">
+          <b style="font-size:12px">Service ID</b>
+          <br/>
+          <small class="label label-primary item" style="background-color:#3C8DBC;font-size: 12px;margin-left: 2%;">
+            <i class="fa fa-ticket"></i>
+            <span style="font-size:12px" id="serviceId">TF67442003</span>
+          </small>
+          <br>
+          <b style="font-size:12px">Invoice </b>
+          <br/>
+          <span style="font-size:12px" id="invoiceNumber">#07075575</span>
+          <br>
+          <b style="font-size:12px">Order ID </b>
+          <br/>
+          <span style="font-size:12px" id="orderId">MU50115576</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+            <div class="col-xs-12 table-responsive" style="width: 100%;float: left;min-height: .01%;overflow-x: auto;position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;">
+
+
+              <table class="table table-striped" style="margin-bottom: 0px;width: 100%;max-width: 100%;margin-bottom: 20px;">
+                <thead>
+                  <tr>
+                    <th style="font-size:12px">Qty</th>
+                    <th style="font-size:12px">Service</th>
+                    <th style="font-size:12px">Description</th>
+                    <th style="font-size:12px">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="serviceDetail" style="background-color:#F9F9F9">
+                  <tr>
+                    <td style="font-size:12px">1</td>
+                    <td style="font-size:12px" id="serviceName">{{service_desc.name}}</td>
+                    <td style="font-size:12px" id="serviceDesc"><p>{{service_desc.desc}}</p></td>
+                    <td style="font-size:12px" id="servicePrice">{{service_desc.price}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+            </div>
+          </div>
+    <div style="float:left;width: 50%;" class="row">
+      <div class="col-xs-5">
+        <p style="font-size:12px" class="lead">Payment Methods:</p>
+        <br>
+        <img style="width: 20%;margin-top: 5%;" src="assets/img/credit/visa.png" alt="Visa">
+        <img style="width: 20%;" src="assets/img/credit/mastercard.png" alt="Mastercard">
+        <img style="width: 20%;" src="assets/img/credit/american-express.png" alt="American Express">
+        <img style="width: 20%;" src="assets/img/credit/paypal2.png" alt="Paypal">
+
+      </div>
+
+    </div>
+    <div style="float:left;width: 50%;"  class="row">
+          <div style="float:right;width: 100%;"  class="col-xs-7">
+              <div style="width: 100%;float: right;" class="table-responsive">
+                <table style="float: right;" class="table">
+                  <tbody style="text-align: left;">
+                  <tr>
+                    <th style="font-size:12px;width:50%">Subtotal:</th>
+                    <td style="text-align: right;font-size:12px">{{service_desc.price}}</td>
+                  </tr>
+                  <tbody style="text-align: left;">
+                  <tr>
+                    <th style="font-size:12px;width:50%">Addons Price:</th>
+                    <td style="text-align: right;font-size:12px">$<span style="font-size:12px" id="addonsTotal">0.00</span></td>
+                  </tr>
+                  <tr>
+                    <th>Discount:</th>
+                    <td style="text-align: right;font-size:12px">$<span style="font-size:12px" id="discount">0</span></td>
+                  </tr>
+                  <tr>
+                    <th>Tax (0%):</th>
+                    <td style="text-align: right;font-size:12px">$<span style="font-size:12px" id="discount">0.00</span></td>
+                  </tr>
+                  <tr>
+                    <th style="font-size:12px">Total:</th>
+                    <td style="text-align: right;font-size:12px">{{service_desc.price}}</td>
+                  </tr>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col col-1>Qty</ion-col>
+        <ion-col col-3>Service</ion-col>
+        <ion-col col-5>Description</ion-col>
+        <ion-col col-3>Subtotal</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-1>1</ion-col>
+        <ion-col col-3>{{service_desc.name}}</ion-col>
+        <ion-col col-5>{{service_desc.desc}}</ion-col>
+        <ion-col col-3>{{service_desc.price}}</ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+    <div class="row" style="width: 100%;">
+      <p class="text-muted well well-sm no-shadow" style="background-color:#F9F9F9;font-size:12px;margin-top: 10px;">
+        We are using a highly secured payment gateway system. Your Card Details will not be disclosed in any situation.
+      </p>
+    </div>
+
+    <div class="row" style="width: 100%;float:left;">
+      <div class="col-xs-12" style="width: 100%; float: right; margin-left: -6%;">
+        <button ion-button full (click)="onClickPayment()" id="cancelBtn" style="background-color:#adadad;width: 48%;float: left;">Cancel</button>
+        <button ion-button full (click)="onClickPayment()" style="background-color: #00a65a;width: 48%;float: right;">
+          <i class="fa fa-credit-card"></i> Make Payment</button>
+
+        <button class="btn btn-default btn-flat pull-right print-link no-print" id="showPrintBtn" style="display:none;margin-left: 5px;">
+          <i class="fa fa-print"></i> Print</button>
+        <button class="btn btn-success btn-flat pull-right no-print" id="showExitBtn" data-action="cancelEditTask_Action" style="display:none;">
+          <i class="fa fa-check-square-o"></i> Thank You</button>
+        <span class="pull-right" id="paymentMessage" style="margin-top: 10px;margin-right: 25px;"></span>
+      </div>
+    </div>
+
+  </section>
+
+</ion-content>

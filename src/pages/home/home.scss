@@ -1,0 +1,113 @@
+page-home {
+  ion-label {
+    margin: 0 !important;
+  }
+
+  .toolbar-title-md {
+    padding: 0 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #424242;
+  }
+  .toolbar-title {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  ion-item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  ion-item > .item-inner {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  elastic-textarea ion-textarea {
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    border-color: #F4F4F4;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(170, 111, 111, 0.12);
+    margin-bottom: 0.2%;
+  }
+
+  .bar-buttons-md[right] {
+    order: 6;
+    text-align: right;
+    margin-bottom: -1.5%;
+    padding-left: 0%;
+  }
+
+  .chatPageFooter {
+    .toolbar-background {
+    background: map-get($chat, footer);
+  }
+  .toolbar {
+    padding: 4px 8px !important;
+  }
+  .ion-md-send{
+    min-width: 33px;
+    font-size: 1.4em;
+    margin-right: -15%;
+  }
+  .toolbar-md {
+    min-height: inherit;
+  }
+  elastic-textarea{
+    line-height: 20px;
+  }
+  div.attachmentIcon.withplus {
+    width: 92%;
+    float:left;
+  }
+  div.attachmentIcon.withoutplus {
+    width: 100%;
+    float:left;
+  }
+  ion-buttons {
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    padding: 1px 0px 0px 1px;
+    margin-right: -1%;
+  }
+  // For windows
+  .text-input-wp{
+    border: 0;
+    line-height: 20px;
+  }
+  }
+
+  .scroll-content {
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 43px !important;
+  }
+  ion-item{
+    background: transparent !important;
+  }
+  ion-list{
+    margin: 0 !important;
+  }
+  .chatContent{
+    width: 85% !important;
+    margin-left: 12% !important;
+  }
+
+  .noUpdates {
+    font-size: 13px;
+    color: #000000;
+    background-color: white;
+    text-align:center;
+    padding:14px;
+    width: 82%;
+    margin-left: 13.5%;
+  }
+
+}

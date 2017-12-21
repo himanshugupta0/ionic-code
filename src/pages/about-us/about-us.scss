@@ -1,0 +1,27 @@
+page-about-us {
+  .aboutus {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: #85868d;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  ion-slides {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #85868d;
+  }
+  small {
+    color: #85868d;
+  }
+}
